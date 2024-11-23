@@ -1,0 +1,37 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1f242d;
+}
+h1{
+  font-size: 90px;
+  color: #fff; 
+}
+p{
+  font-size: 35px;
+  color: #0ef;
+  font-weight: 600;
+}
+section .animate{
+  transition: 1s;
+}
+.sec-1 .animate{
+  transform:translateY(-100%);
+  opacity: 0%;
+}
+.sec-1.show-animate .animate{
+  transform: translateX(0);
+  opacity: 100%;
+}
+
+.sec-2 p{
+  color: #0f0;
+}
